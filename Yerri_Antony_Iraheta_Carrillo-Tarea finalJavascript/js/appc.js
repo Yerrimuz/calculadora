@@ -206,6 +206,22 @@ var calculadora = {
         })
 
     },
+    mostrar: function(num) {
+
+  if (display.innerHTML.substring(0) == "0") {
+  display.innerHTML = display.innerHTML.substring(1)
+  }
+  display.innerHTML = num
+  display.innerHTML = display.innerHTML.substring(0, 8)
+
+  },
+    numero: function(valor) {
+
+  if(display.innerHTML == "0"){
+  display.innerHTML = "";
+  }
+  display.innerHTML += valor;
+  },        
     numero: function(n){
        var num = display.innerHTML
        var self = this
